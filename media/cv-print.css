@@ -136,7 +136,7 @@ body {
   line-height: 1.5em;
   /*also written as...  font: normal normal 400 100%/1.5em;*/
   /* font-family: "Helvetica", sans-serif; */
-  font-family: "NotoSerifSC-Regular";
+  font-family: "Noto Serif Simplified Chinese";
   /* margin: 0.5in 0.5in 0.5in 0.5in */
   /* margin-top: 1em;
 	margin-left: 1em; */
@@ -155,7 +155,8 @@ em {
 }
 
 h1 {
-  font-family: "Avenir Next", sans-serif;
+  /* font-family: "Avenir Next", sans-serif; */
+  font-family: "Noto Serif Simplified Chinese";
   text-align: center;
   font-size: 50pt;
   font-weight: lighter;
@@ -254,3 +255,25 @@ a {
     visibility: hidden;
   }
 }
+
+@font-face {
+  font-family: 'SiYuanSong';
+  src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能，调用本地字体*/
+      url('./fonts/NotoSerifSC-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+  }
+      
+  @font-face {
+  font-family: 'SiYuanSong';
+  src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能，调用本地字体*/
+      url('./fonts/NotoSerifSC-Regular.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+  }
+      
+  body{
+      font-family: 'SiYuanSong', serif;
+  }
